@@ -1,0 +1,16 @@
+@import url("styles/header.css");
+:root{
+    --cor-de-fundo:#FFFBE4;
+    --branco:white;
+    --degrade:linear-gradient(rgb(214, 4, 214), rgb(33, 1, 33) ); 
+}
+body{
+    background-color: var(--cor-de-fundo);
+    font-size: 16px;
+    font-weight: 400px;
+}
+p{
+    color: rgb(136, 15, 15);
+    font-size: 20px;
+    font-family: 'Fantasy', Arial, sans-serif;
+}
