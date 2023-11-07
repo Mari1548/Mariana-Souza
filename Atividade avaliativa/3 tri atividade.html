@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fases da vida</title>
+    <link rel="stylesheet" href="avaliacao.css">
+</head>
+<body>
+    <h1>Em que fase da vida você está?</h1>
+    <main>
+        <form action="">
+            <fieldset>
+                <p>Comunique sua idade: </p>
+                <input type="number" name="txtidade" id="txtidade">
+                <p>Sexo: </p>
+                <input type="radio" name="rsex" id="mas" >
+                <label for="mas">masculino</label>
+                <input type="radio" name="rsex" id="fem" >
+                <label for="fem">feminino</label>
+                <br><br>
+                <input type="button" id="botao" value="verificar" onclick="verificar()">
+            </fieldset>
+        </form>
+    </main>
+    <script>
+        function verificar() {
+            const age = document.getElementById("idade").value;
+            const mas = document.getElementById("sexmas");
+            const fem = document.getElementById("sexfem");
+            const txt = document.getElementById("txt"); 
+            const imagem = document.getElementById('imagem');
+            let imageSrc = '';
+
+            if (age <= 17 ) {
+                txt.innerHTML = "Voce é uma criança homem " + age + " anos.";
+                imagem.src = "criança menino.jpg";
+            }
+            if(age >=17 ){
+                txt.innerHTML = "Você é um adulto homem e têm " + age + " anos.";
+                imagem.src = "homem .jpg";
+            }
+            if(age>=59 ){
+                txt.innerHTML = "Você é um senhor homem e têm " + age + " anos.";
+                imagem.src ="idoso homem.avif";
+            }
+
+            if (age <= 17 ) {
+                txt.innerHTML = "Você é uma criança mulher e têm " + age + " anos.";
+                imagem.src = "crianca mulher.jpg";
+
+            } 
+            if(age >=17 ){
+                txt.innerHTML = "Você é uma adulta mulher e têm " + age + " anos.";
+                imagem.src = "mulher adulta.avif";
+            }
+            if(age>=59 ){
+                txt.innerHTML = "Você é uma senhora mulher e têm " + age + " anos.";
+                imagem.src = "idosa mulher.jpg";
+            }
+
+            res.innerHTML = mensagem;
+            imagem.innerHTML = `<img src="${imageSrc}" >`;
+        }
+    </script>
+</body>
+</html>
