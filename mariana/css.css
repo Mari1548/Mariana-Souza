@@ -1,0 +1,9 @@
+body {
+  align-items: center;
+  background: linear-gradient(45deg,  #90EE90 0%,#4d6e4d 100%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
